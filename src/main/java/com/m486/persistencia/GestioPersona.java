@@ -9,5 +9,5 @@ import com.m486.model.Persona;
 public interface GestioPersona {
 
     List<Persona> obtenirTotesPersones();
-    void afegirPersona(Persona persona);
+    void guardaPersona(Persona persona);
 }

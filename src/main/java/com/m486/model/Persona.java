@@ -16,4 +16,10 @@ public class Persona {
     public int getEdat() {
         return this.edat;
     }
+
+    @Override
+    public String toString() {
+        return "nom='" + nom + '\'' +
+                ", edat=" + edat;
+    }
 }

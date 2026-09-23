@@ -51,4 +51,19 @@ public class GestioPersonaImpl implements GestioPersona {
             throw new GestioPersonaException("Error guardant persona a fitxer", e);
         }
     }
+
+    @Override
+    public List<Persona> cercaPerNom(String nom) {
+        List<Persona> personesFiltradesNom = new ArrayList<>();
+
+        List<Persona> totes = this.obtenirTotesPersones();
+
+        for (Persona persona : totes){
+            if (persona.getNom().equals(nom)){
+                personesFiltradesNom.add(persona);
+            }
+        }
+
+        return personesFiltradesNom;
+    }
 }

@@ -10,4 +10,6 @@ public interface GestioPersona {
 
     List<Persona> obtenirTotesPersones();
     void guardaPersona(Persona persona);
+
+    List<Persona> cercaPerNom(String nom);
 }
